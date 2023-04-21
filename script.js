@@ -22,9 +22,19 @@ console.log(kitchenItem);
 
 // method-2
 
-curryPowder.forEach(element => {
-   let li=document.createElement('li');
-   li.innerText=element;
-   kitchenItem.appendChild(li);
+// curryPowder.forEach(element => {
+//    let li=document.createElement('li');
+//    li.innerText=elemSent;
+//    kitchenItem.appendChild(li);
    
+// });   
+
+let liItem=document.querySelectorAll('li');
+let powderArray=[];
+
+liItem.forEach(element => {
+   let liList=element.innerText;
+   powderArray.push(liList);
 });
+
+console.log(powderArray);
