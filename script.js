@@ -1,6 +1,6 @@
 
 
-let curryPowder=['salt',"pepper","chill","turmeric","sugar"];
+let curryPowder=['salt',"pepper","chill","turmeric"];
 
 
 let kitchenItem=document.getElementById("kitchen-item");
@@ -21,20 +21,21 @@ console.log(kitchenItem);
 
 
 // method-2
-
-// curryPowder.forEach(element => {
-//    let li=document.createElement('li');
-//    li.innerText=elemSent;
-//    kitchenItem.appendChild(li);
+curryPowder.forEach((element,position) => {
+   let li=document.createElement('li');
+   li.innerText= `(${position+1})  ${element}`;
+   kitchenItem.appendChild(li);
    
-// });   
+});   
 
-let liItem=document.querySelectorAll('li');
-let powderArray=[];
 
-liItem.forEach(element => {
-   let liList=element.innerText;
-   powderArray.push(liList);
-});
 
-console.log(powderArray);
+// let liItem=document.querySelectorAll('li');
+// let powderArray=[];
+
+// liItem.forEach(element => {
+//    let liList=element.innerText;
+//    powderArray.push(liList);
+// });
+
+// console.log(powderArray);
