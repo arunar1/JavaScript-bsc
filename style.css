@@ -1,4 +1,66 @@
-li{
-    background-color: rgb(235, 213, 213);
+body{
+    margin:0px;
+    background-color: lightblue;
+}
+.kitchen-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container h2{
+   text-align: center;
+   font-size: 50px;
     
+}
+.container input{
+    width: 200px;
+    height: 30px;
+    background-color: burlywood;
+    color: black;
+    border-radius: 10px;
+    /* padding:15px; */
+}
+.kitchen-header button{
+    height: 32px;
+
+    background-color: beige;
+    border-radius: 5px;
+    margin-left: 40px;
+    width: 60px;
+}
+
+/* input:hover,button:hover{
+    background-color: rgb(240, 229, 251);
+    cursor: pointer;
+    transform: scale(1.1);
+} */
+*{
+    box-sizing: border-box;
+}
+.kitchen-item{
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.kitchen-item-list li{
+    background-color: cadetblue;
+    list-style-type: none;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+
+}
+#dlt-btn {
+    display: flex;
+    flex-direction: column;
+}
+#dlt-btn button{
+    margin: 10px;
+    background-color: rgb(164, 208, 209);
 }

@@ -1,41 +1,81 @@
+let input = document.getElementById("kitchen-input");
+
+let button = document.getElementById("add-btn");
+
+let list = document.getElementById("kitchen-item-list");
+
+let button1=document.getElementById("kitchen-item-list");
+
+//add item
+item = [];
+function addItem() {
+   let kitchenInput = input.value;
+   //create dom element
+   if (kitchenInput == '') {
+      alert('error');
+   }
+   else 
+   {
+      var flag;
+      for (let element of item) {
+         if (element === kitchenInput) {
+            flag = 1;
+            break
+
+         }
+
+      }
+      if (flag === 1) {
+         alert("repeating");
 
 
-let curryPowder=['salt',"pepper","chill","turmeric"];
+      }
+      else {
+         item.push(kitchenInput);
+         let li = document.createElement('li');
+         li.innerText = kitchenInput;
 
+         list.appendChild(li);
+         let trashBtn=document.createElement('button');
+         
+         //added class name
+         trashBtn.classList.add("fatrash");
+         // console.log(trashBtn);
 
-let kitchenItem=document.getElementById("kitchen-item");
-// console.log(curryPowder)
+         trashBtn.innerText='delete';
+         button1.appendChild(trashBtn);
+         input.value = '';
+         input.focus();
+         console.log(item);
+         
+      }
 
-console.log(kitchenItem);
-
-
-// method-2
-
-// for(let powder of curryPowder){
-//    let li= document.createElement('li');
-//    li.innerText=powder;
-//    kitchenItem.appendChild(li);
-//    console.log(li);
-// }
-
-
-
-// method-2
-curryPowder.forEach((element,position) => {
-   let li=document.createElement('li');
-   li.innerText= `(${position+1})  ${element}`;
-   kitchenItem.appendChild(li);
-   
-});   
+   }
 
 
 
-// let liItem=document.querySelectorAll('li');
-// let powderArray=[];
 
-// liItem.forEach(element => {
-//    let liList=element.innerText;
-//    powderArray.push(liList);
-// });
 
-// console.log(powderArray);
+
+}
+function deleteItem(event){
+   alert(event);
+   // console.log(event.target.classList[0]);
+   if(event.target.classList[0]==='fatrash')
+   {
+     let item1=event.target.parentElement;
+     console.log(item1);
+     item1.remove();
+   }
+
+}
+
+
+
+
+
+
+
+
+button.addEventListener("click", addItem);
+// button1.addEventListener('click',deleteItem);
