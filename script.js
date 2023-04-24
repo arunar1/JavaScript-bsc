@@ -40,13 +40,13 @@ function addItem() {
          
          //added class name
          trashBtn.classList.add("fatrash");
-         // console.log(trashBtn);
+         console.log(trashBtn);
 
          trashBtn.innerText='delete';
          button1.appendChild(trashBtn);
          input.value = '';
          input.focus();
-         console.log(item);
+         // console.log(item);
          
       }
 
@@ -78,4 +78,4 @@ function deleteItem(event){
 
 
 button.addEventListener("click", addItem);
-// button1.addEventListener('click',deleteItem);
+ button1.addEventListener('click',deleteItem);

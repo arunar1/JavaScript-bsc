@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-size: cover;
+    font-size: 16px;
+}
+
+header{
+    position: fixeds;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(50, 67, 73,0.8);
+    height: 6vh;
+    justify-content:space-between;
+    align-items: center;
+
+
+}
+nav .logo{
+    width: 50%;
+    padding-left: 20px;
+}
+.logo img{
+    width: 60px;
+    border-radius: 100%;
+
+
+}
+nav .navbar{
+    width: 50%;
+}
+.navbar a{
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+
+}

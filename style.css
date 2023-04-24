@@ -42,7 +42,7 @@ body{
 
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 .kitchen-item-list li{
@@ -55,12 +55,4 @@ body{
     text-align: center;
     margin: 10px;
 
-}
-#dlt-btn {
-    display: flex;
-    flex-direction: column;
-}
-#dlt-btn button{
-    margin: 10px;
-    background-color: rgb(164, 208, 209);
 }

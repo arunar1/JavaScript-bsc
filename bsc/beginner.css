@@ -1,0 +1,62 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./back.jpeg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center bottom;
+    overflow: hidden;
+}
+
+.container{
+    perspective: 100px;
+    /* perspective-origin: 50% 50%; */
+}
+
+.runway{
+    width: 170px;
+    background-color: black;
+    height: 950px;
+    margin: auto;
+    box-shadow: 5px 0px 0px #383838,-5px 0px 0px #383838;
+    position: relative;
+    transform: rotateX(11deg);
+}
+.runway::before{
+    content:'';
+    position: absolute;
+    width: 5px;
+    left: 50%;
+    height: 100%;
+    background-color: white;
+    transform: translateX(-70px);
+}
+.runway::after{
+    content:'';
+    position: absolute;
+    width: 5px;
+    left: 50%;
+    height: 100%;
+    background-color: white;
+    transform: translateX(65px);
+}
+.runway span{
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    /* background-color: wheat; */
+    border: 4px dashed wheat;
+
+
+}
+.plane{
+    /* width: 570px; */
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+}
