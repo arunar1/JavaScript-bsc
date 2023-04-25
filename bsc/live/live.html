@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volkswagen</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
     <link rel="stylesheet" href="./live.css">
 </head>
 
@@ -27,14 +31,78 @@
         </nav>
     </header>
     <div class="car-bg">
-        <img src="./images/vw2.avif" alt="car-pic">
-        <div class="car-info">
-            <h1>Welcome to <span>volkswagen</span> </h1>
-            <a class="cta-button" href="">Explore more</a>
-        </div>
-    </div>
 
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <!-- <div class="swiper-slide">
+                    <img src="./images/vw2.avif" alt="car-pic">
+                    <div class="car-info">
+                        <h1>Welcome to <span>volkswagen</span> </h1>
+                        <a class="cta-button" href="">Explore more</a>
+                    </div> -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/vw2.avif" alt="car-pic">
+                            <div class="car-info">
+                                <h1>Welcome to <span>volkswagen</span> </h1>
+                                <a class="cta-button" href="">Explore more</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
 
+                            <img src="./images/vw1.avif" alt="car-pic">
+                            <div class="car-info">
+                                <h1>Welcome to <span>volkswagen</span> </h1>
+                                <a class="cta-button" href="">Explore more</a>
+
+                            </div>
+                            <div class="swiper-slide">
+
+                                <img src="./images/vw1.avif" alt="car-pic">
+                                <div class="car-info">
+                                    <h1>Welcome to <span>volkswagen</span> </h1>
+                                    <a class="cta-button" href="">Explore more</a>
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <img src="./images/vw2.avif" alt="car-pic">
+                                    <div class="car-info">
+                                        <h1>Welcome to <span>volkswagen</span> </h1>
+                                        <a class="cta-button" href="">Explore more</a>
+
+                                    </div>
+                                </div>
+                                    <div class="swiper-slide">Slide 5</div>
+                                    <div class="swiper-slide">Slide 6</div>
+                                    <div class="swiper-slide">Slide 7</div>
+                                    <div class="swiper-slide">Slide 8</div>
+                                    <div class="swiper-slide">Slide 9</div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script src="./js/live.js"></script>
 </body>
 
 </html>
