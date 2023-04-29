@@ -1,13 +1,14 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    effect: 'fade',
+    effect: 'cube',
     speed:5000,
     loop: true,
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable:true,
     },
   
     // // Navigation arrows
