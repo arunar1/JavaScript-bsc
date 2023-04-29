@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    effect: 'cube',
+    effect: 'fade',
     speed:5000,
     loop: true,
   
