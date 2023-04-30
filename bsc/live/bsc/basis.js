@@ -13,11 +13,11 @@
 
 // console.log(isMatchToday);
 
-let playerFirstName='';
-let playerMidName='chunni';
-let playerLastName='kohli';
+let playerFirstName
+let playerMidName
+let playerLastName
 
-let tshirtDisplayName=playerFirstName||playerMidName||playerLastName;
+let tshirtDisplayName=playerFirstName??playerMidName??playerLastName??"please provide a name";
 
 // console.log(tshirtDisplayName);
 
@@ -32,3 +32,14 @@ let tshirtDisplayName=playerFirstName||playerMidName||playerLastName;
 
 //nullish ??
 console.log(tshirtDisplayName);
+
+//function 
+
+function getThirdUmpire(a='no value'){
+    console.log(a);
+
+}
+getThirdUmpire("out");
+getThirdUmpire("NOTout");
+getThirdUmpire(10);
+getThirdUmpire();
