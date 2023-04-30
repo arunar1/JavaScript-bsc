@@ -151,14 +151,44 @@ header nav .fa-bars{
   }
   .swiper-pagination-bullet{
     background: transparent;
+    /* list-style-type: disc; */
     height:20px;
     width:20px;
-    border: 2px solid white;
+    border: 2px solid black;
     opacity: 1;
-
+    border-radius: 5px;
 
 
   }
+
+  .swiper-pagination{
+    display: flex;
+    align-items: center;
+    margin-inline: 50px;
+    /* justify-content: space-between; */
+    /* background-color: red;  */
+     position: absolute;
+    top: 7px;
+    top: 80vh;
+    bottom: 10vh;
+
+  }
+
+  /* .swiper-pagination-bullet:nth-child(1)::after{
+    content: "Home";
+    padding-inline: 40px;
+  }
+  .swiper-pagination-bullet:nth-child(2)::after{
+    content: "Registration";
+    
+    padding-inline: 40px;
+  }
+  .swiper-pagination-bullet:nth-child(3)::after{
+    content: "Login";
+    
+    padding-inline: 40px;
+  } */
+
   .swiper-pagination-bullet-active{
     border: 2px solid red;
   }
