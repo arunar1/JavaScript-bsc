@@ -31,15 +31,62 @@ let tshirtDisplayName=playerFirstName??playerMidName??playerLastName??"please pr
 
 
 //nullish ??
-console.log(tshirtDisplayName);
+// console.log(tshirtDisplayName);
 
 //function 
 
-function getThirdUmpire(a='no value'){
-    console.log(a);
+// function getThirdUmpire(a){
+//     a&&umpair(a);
+
+// }
+// function umpair(a){
+//     console.log(a);
+// }
+// getThirdUmpire("out");
+// getThirdUmpire("NOTout");
+// getThirdUmpire(10);
+// getThirdUmpire();
+
+
+const display=document.getElementById("display-screen");
+
+// function getUmpair(decision){
+//     // let decision=decision;
+//     let screenDisplay=decision&&displayFinelDecision(decision);
+//     if(screenDisplay){
+//         setTimeout(()=>{
+//             display.innerText='';
+//         },4000)
+//     }
+// }
+
+// function displayFinelDecision(decision){
+//     display.innerText=decision.toUpperCase();
+//     return true;
+// }
+
+// getUmpair("Not out");
+
+let camerAngle=[];
+
+function umpireReview(groundUmpireReq,callbackFn){
+    if(!groundUmpireReq) return
+    groundUmpireReq&&callbackFn();
+    //array destructuring
+
+    const [camerAngleResult]=camerAngle;
+    console.log(camerAngleResult);
 
 }
-getThirdUmpire("out");
-getThirdUmpire("NOTout");
-getThirdUmpire(10);
-getThirdUmpire();
+
+function checkCamera(){
+    let decision=prompt("Enter the decsion");
+    decision=decision.toLowerCase();
+    decision=(decision==="out")?true:false;
+    camerAngle.push(decision);
+    return decision;
+}
+
+umpireReview(true,checkCamera);
+
+// console.log(camerAngle);
