@@ -74,23 +74,38 @@ function umpireReview(groundUmpireReq,callbackFn){
     groundUmpireReq&&callbackFn();
     //array destructuring
 
-    const [camerAngleResult]=camerAngle;
-    // console.log(camerAngleResult);
-    camerAngleResult?displayMessage("out"):displayMessage("not out");
+    const [camerAngle1Result,camerAngle2Result]=camerAngle;
+    console.log(camerAngle1Result);
+    console.log(camerAngle2Result);
+    // camerAngle1Result?displayMessage("out"):displayMessage("not out");
+    camerAngle1Result&&camerAngle2Result?displayMessage("out"):displayMessage("not out");
 }
 
 function displayMessage(message){
     display.innerHTML=message.toUpperCase();
 }
 
-function checkCamera(){
+function getThirdUmpire(){
     let decision=prompt("Enter the decsion");
     decision=decision.toLowerCase();
     decision=(decision==="out")?true:false;
     camerAngle.push(decision);
+    console.log(camerAngle);
     return decision;
+
 }
 
-umpireReview(true,checkCamera);
+function checkCamera1(){
+   getThirdUmpire()
+}
+
+function checkCamera2(){
+   getThirdUmpire();
+}
+
+
+
+umpireReview(true,checkCamera1);
+umpireReview(true,checkCamera2);
 
 // console.log(camerAngle);
