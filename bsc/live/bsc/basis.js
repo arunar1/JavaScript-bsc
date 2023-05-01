@@ -75,8 +75,12 @@ function umpireReview(groundUmpireReq,callbackFn){
     //array destructuring
 
     const [camerAngleResult]=camerAngle;
-    console.log(camerAngleResult);
+    // console.log(camerAngleResult);
+    camerAngleResult?displayMessage("out"):displayMessage("not out");
+}
 
+function displayMessage(message){
+    display.innerHTML=message.toUpperCase();
 }
 
 function checkCamera(){
