@@ -13,11 +13,11 @@
 
 // console.log(isMatchToday);
 
-let playerFirstName
-let playerMidName
-let playerLastName
+// let playerFirstName
+// let playerMidName
+// let playerLastName
 
-let tshirtDisplayName=playerFirstName??playerMidName??playerLastName??"please provide a name";
+// let tshirtDisplayName=playerFirstName??playerMidName??playerLastName??"please provide a name";
 
 // console.log(tshirtDisplayName);
 
@@ -48,7 +48,7 @@ let tshirtDisplayName=playerFirstName??playerMidName??playerLastName??"please pr
 // getThirdUmpire();
 
 
-const display=document.getElementById("display-screen");
+// const display=document.getElementById("display-screen");
 
 // function getUmpair(decision){
 //     // let decision=decision;
@@ -67,45 +67,233 @@ const display=document.getElementById("display-screen");
 
 // getUmpair("Not out");
 
-let camerAngle=[];
+// let camerAngle=[];
 
-function umpireReview(groundUmpireReq,callbackFn){
-    if(!groundUmpireReq) return
-    groundUmpireReq&&callbackFn();
-    //array destructuring
+// function umpireReview(groundUmpireReq,callbackFn){
+//     if(!groundUmpireReq) return
+//     groundUmpireReq&&callbackFn();
+//     //array destructuring
 
-    const [camerAngle1Result,camerAngle2Result]=camerAngle;
-    console.log(camerAngle1Result);
-    console.log(camerAngle2Result);
-    // camerAngle1Result?displayMessage("out"):displayMessage("not out");
-    camerAngle1Result&&camerAngle2Result?displayMessage("out"):displayMessage("not out");
-}
+//     const [camerAngle1Result,camerAngle2Result]=camerAngle;
+//     console.log(camerAngle1Result);
+//     console.log(camerAngle2Result);
+//     // camerAngle1Result?displayMessage("out"):displayMessage("not out");
+//     camerAngle1Result&&camerAngle2Result?displayMessage("out"):displayMessage("not out");
+// }
 
-function displayMessage(message){
-    display.innerHTML=message.toUpperCase();
-}
+// function displayMessage(message){
+//     display.innerHTML=message.toUpperCase();
+// }
 
-function getThirdUmpire(){
-    let decision=prompt("Enter the decsion");
-    decision=decision.toLowerCase();
-    decision=(decision==="out")?true:false;
-    camerAngle.push(decision);
-    console.log(camerAngle);
-    return decision;
+// function getThirdUmpire(){
+//     let decision=prompt("Enter the decsion");
+//     decision=decision.toLowerCase();
+//     decision=(decision==="out")?true:false;
+//     camerAngle.push(decision);
+//     console.log(camerAngle);
+//     return decision;
 
-}
+// }
 
-function checkCamera1(){
-   getThirdUmpire()
-}
+// function checkCamera1(){
+//    getThirdUmpire()
+// }
 
-function checkCamera2(){
-   getThirdUmpire();
-}
+// function checkCamera2(){
+//    getThirdUmpire();
+// }
 
 
 
-umpireReview(true,checkCamera1);
-umpireReview(true,checkCamera2);
+// umpireReview(true,checkCamera1);
+// umpireReview(true,checkCamera2);
 
 // console.log(camerAngle);
+
+
+
+//arrow function
+
+// const display=document.getElementById('display-screen');
+
+
+// const showMessage=(element)=>{
+//     console.log(this);
+// }
+
+// display.addEventListener('click',showMessage)  
+
+
+// function getThirdUmpire(){
+//     console.log(this);
+// }
+
+// const getThirdUmpire2=function(){
+//     console.log(' not out');
+// }
+
+// getThirdUmpire();
+// getThirdUmpire2();
+
+
+// const getThirdUmpire5=()=>{
+//     console.log("who are you?")
+// }
+// getThirdUmpire5();
+
+// var atitle='welcome sir';
+// const ampleObj={
+//     title:'welcome ',
+//     age:3,
+//     showMessage:()=>{
+//         console.log(this);
+//     }
+// }
+// ampleObj.showMessage();
+
+// objects
+
+//data type
+
+// 7 primitve data type===>string num boolean bigint symbols undefined null
+
+//  const channel={
+//     channelName:"sports world",
+//     age:1,
+//     topic:['football','cricket']
+// }
+// //dot notation
+// channel.subscriber=100;
+// channel.owner='arun';
+
+// //bracket notation
+// console.log(channel['channelName']);
+
+// channel['newseries']='champion club';
+
+// console.log(channel.newseries);
+// console.log(channel)
+
+
+// const profile=["lumba","chukkuru"]
+// const [kali,kanu]=profile;
+// console.log(kali);
+// console.log(kanu);
+
+//delete object
+
+// delete channel.channelName;
+// console.log(channel);
+
+// const isAward='anyA';
+// channel [isAward]='no';
+// console.log(channel)
+
+
+
+
+// console.log(channel);
+
+//creating a object using function
+
+
+// function newObj(channelId,year){
+//     return(
+//         name:channelId,
+//         age :year
+
+//     )
+// }
+
+
+// newObj('web',2);
+
+// const channel={
+//     channelName:"sports world",
+//     age:1,
+//     topic:['football','cricket'],
+//     channelMessage:function(){
+//         console.log("like share and subscribe")
+//     }
+// }
+// for(key in channel){
+//     console.log(channel[key]);
+// }
+
+// console.log(Object.values(channel));
+
+//array
+
+// const channelTopics=['html','css','javascript'];
+
+// console.log(channelTopics.length);
+
+// console.log(channelTopics[0]);
+
+// for(i=0;i<channelTopics.length;i++){
+//     console.log(channelTopics[i]);
+// }
+
+// for(topic in channelTopics)
+// {
+//     console.log(channelTopics[topic]);
+// }
+
+
+// channelTopics.push('react');
+
+// channelTopics.pop();
+
+// channelTopics.shift();
+
+// channelTopics.unshift()
+
+// console.log(channelTopics)
+
+
+//splice and slice
+
+// channelTopics.splice(0,0 );//cut cheyth kalayuka
+
+// newArray=channelTopics.slice();
+// console.log("new array",newArray)
+
+// console.log(channelTopics)
+
+
+//array iteration using loop
+//in and of concept in the iteration for loop
+
+// for(let top of channelTopics)
+// {
+//     console.log(top);
+// }
+
+let screenEl=document.getElementById("display-screen");
+let umpireDesion;
+const TimeOut=10000;
+console.log("1.review started by ground umpire");
+
+function getThirdUmpireResult(){
+    console.log("2.Third umpire review started")
+    console.log("3.Third umpire is checking camera");
+    setTimeout(()=>{
+        umpireDesion="out";
+        console.log(`4.Third umpire decision is ${umpireDesion}`);
+        displayResult();
+    },TimeOut)
+    
+
+}
+function displayResult(){
+    console.log(`5.review is finished :${umpireDesion}`);
+    passInfoGrroundUmpire();
+    screenEl.innerText=umpireDesion
+}
+
+function passInfoGrroundUmpire(){
+    console.log("please revert your decision");
+}
+
+
+getThirdUmpireResult(displayResult,passInfoGrroundUmpire)
