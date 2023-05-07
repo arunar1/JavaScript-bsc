@@ -269,31 +269,102 @@
 //     console.log(top);
 // }
 
-let screenEl=document.getElementById("display-screen");
-let umpireDesion;
-const TimeOut=10000;
-console.log("1.review started by ground umpire");
+// let screenEl=document.getElementById("display-screen");
+// let umpireDesion;
+// const TimeOut=10000;
+// console.log("1.review started by ground umpire");
 
-function getThirdUmpireResult(){
-    console.log("2.Third umpire review started")
-    console.log("3.Third umpire is checking camera");
-    setTimeout(()=>{
-        umpireDesion="out";
-        console.log(`4.Third umpire decision is ${umpireDesion}`);
-        displayResult();
-    },TimeOut)
+// function getThirdUmpireResult(){
+//     console.log("2.Third umpire review started")
+//     console.log("3.Third umpire is checking camera");
+//     setTimeout(()=>{
+//         umpireDesion="out";
+//         console.log(`4.Third umpire decision is ${umpireDesion}`);
+//         displayResult();
+//     },TimeOut)
     
 
+// }
+// function displayResult(){
+//     console.log(`5.review is finished :${umpireDesion}`);
+//     passInfoGrroundUmpire();
+//     screenEl.innerText=umpireDesion
+// }
+
+// function passInfoGrroundUmpire(){
+//     console.log("please revert your decision");
+// }
+
+
+// getThirdUmpireResult(displayResult,passInfoGrroundUmpire)
+
+
+// let districts=['kollam','kannur','kozzhikode','waynad','malapuram'];
+
+// const listEl=document.querySelector('.districts');
+// listEl.appendChild()
+
+// districts.map((district)=>{
+//     console.log(district);
+    
+
+
+// })
+
+// var test=document.getElementById('header');
+// const num1=prompt("ENter the numbwer");
+// const num2=prompt("Enter the second num:")
+// const num3=Number(num1)+Number(num2);
+// test.innerHTML=num3;
+// test.style.backgroundColor='red';
+// test.style.color='green'
+
+// document.getElementsByClassName('header')[0].innerHTML="new";
+
+// document.getElementsByTagName('h1')[2].innerHTML='hello';
+
+// document.getElementById('header').style.fontSize="30px";
+
+
+
+
+// function myFun(){
+//     console.log("welcom");
+// }
+
+// myFun();
+
+
+// function with argumrnt
+
+// function sum(a,b){
+//     console.log(a+b);
+// }
+
+// sum(10,2);
+
+// if(true){
+//     alert("welcome sir");
+// }
+
+let age=2;
+if(age>18){
+    console.log("hello welcome to the world of web development");
+
 }
-function displayResult(){
-    console.log(`5.review is finished :${umpireDesion}`);
-    passInfoGrroundUmpire();
-    screenEl.innerText=umpireDesion
+else{
+    console.log("not welcome tothe world of web development");
 }
 
-function passInfoGrroundUmpire(){
-    console.log("please revert your decision");
+let fruit='banana';
+
+switch(fruit){
+    case "apple":
+        console.log("apple");
+        break;
+    case 'banana':
+        console.log("fruit is babnan");
+        break;
+    default:
+        console.log("not a fruit");
 }
-
-
-getThirdUmpireResult(displayResult,passInfoGrroundUmpire)
