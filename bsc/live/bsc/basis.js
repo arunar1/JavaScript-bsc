@@ -347,24 +347,204 @@
 //     alert("welcome sir");
 // }
 
-let age=2;
-if(age>18){
-    console.log("hello welcome to the world of web development");
+// let age=2;
+// if(age>18){
+//     console.log("hello welcome to the world of web development");
 
-}
-else{
-    console.log("not welcome tothe world of web development");
-}
+// }
+// else{
+//     console.log("not welcome tothe world of web development");
+// }
 
-let fruit='banana';
+// let fruit='banana';
 
-switch(fruit){
-    case "apple":
-        console.log("apple");
-        break;
-    case 'banana':
-        console.log("fruit is babnan");
-        break;
-    default:
-        console.log("not a fruit");
-}
+// switch(fruit){
+//     case "apple":
+//         console.log("apple");
+//         break;
+//     case 'banana':
+//         console.log("fruit is babnan");
+//         break;
+//     default:
+//         console.log("not a fruit");
+// }
+
+// for(let i=0;i<10;i++){
+//     console.log(i);
+// }
+// var i=10
+// while(i<20){
+//     console.log(i);
+//     if(i==15){
+//         break;
+//     }
+//     i++;
+// }
+
+//for of
+
+// myArray=["arun","developer"];
+
+// for(let x of myArray){
+//     console.log(x);
+// }
+
+//for in
+
+// let muObj={
+//     name:'arun',
+//     age:21
+// }
+
+// for(let y in muObj){
+//     console.log(muObj.y);
+// }
+
+// //event
+
+// function onAlert(){
+//     alert("you have clicked");
+// }
+
+// let btn1=document.querySelector('.btn');
+
+// btn1.addEventListener('click',onAlert);
+
+//spread operator
+
+// const globelPlayer={
+//     name:'hero1',
+//     age:23
+// }
+// const player1=Object.assign(globelPlayer);
+
+// console.group(player1);
+// player1.name='arun';
+// console.log(globelPlayer);
+
+// const player3={
+//     name:'anu',
+//     age:10
+// }
+// top pass the copy
+
+//concatenation using the spred operator
+
+
+// const worldPlayer=['ammu','sreedevi','allika'];
+
+// const BigBoss=['Akhil marar','shoba','sruthi','reneesh'];
+
+// const players=[...BigBoss,...worldPlayer];
+
+// console.log(players);
+
+// const {name,...rest }=globelPlayer;
+// console.log(name);
+// console.log(rest);
+
+
+// const myFunc=(a)=>{
+//     alert(a)
+// }
+
+// myFunc(4);
+
+//foreach method
+
+ const globelPlayer=[
+    {
+        name:'manu',
+        age:20,
+        place:'kollam',
+        company:{
+            name:"volvox",
+            year:2020
+        }
+    },
+    {
+        name:"monkit",
+        age:6,
+        palce:'thrissur'
+    },
+    {
+        name:'Super',
+        age:23,
+        place:"vettoor"
+    }
+];
+// console.log(globelPlayer);
+
+// for(let i=0;i<globelPlayer.length;i++)
+// {
+//     console.log(globelPlayer[i]);
+// }
+
+// globelPlayer.forEach((value,index,array)=>{
+//     console.log(value.name);
+//     console.log(globelPlayer[index].age);
+//     console.log(array);
+
+// })
+
+//map
+
+const newAArry=globelPlayer.map((value)=>{
+    return value.name;
+})
+
+console.log(newAArry)
+
+//aray destructuring
+
+//filter method
+
+ const newPeople=globelPlayer.filter((value)=>{
+    return value.age>19 && value.name=='manu';
+ })
+
+ console.log(newPeople);
+
+ let total=0;
+
+ let numberArray=[23,32,54,65,6,3,35,6,78,9]; 
+ for(let i=0;i<numberArray.length;i++){
+    total=total+Number(numberArray[i]);
+ }
+ console.log(total);
+
+
+ //find method
+
+ //return only one object
+
+ const newObj=globelPlayer.find((value)=>{
+    return value.name=='monkit';
+ });
+ console.log(newObj);
+
+ //sort method
+
+
+ const SortedNum=numberArray.sort((a,b)=>{
+    return a-b;
+ });
+ console.log(numberArray);
+ console.log(SortedNum);
+
+
+ //flat  method for nested array in single array
+
+
+ const obj=globelPlayer.find((value)=>{
+    return value.company;
+ })
+ console.log(obj)
+  
+
+ const numberGrater=numberArray.map((value)=>{
+    return value;
+ });
+numberGrater.filter
+
+ console.log(numberGrater);
